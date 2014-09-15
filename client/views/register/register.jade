@@ -1,0 +1,13 @@
+h1 Register
+
+.row
+  .col-xs-3
+    form(role='form', novalidate, method='post', action='/register')
+      .form-group
+        label(for='email') Email
+        input.form-control#email(regquired, ng-model='user.email', validate, type='email', name='email', autofocus=true)
+      .form-group
+        label(for='password') Password
+        input.form-control#password(required, mg-model='user.password', ng-minlength='3', type='password', name='password')
+      button.btn.btn-primary(type='submit', ng-click='register()') Submit
+  .col-xs-9
