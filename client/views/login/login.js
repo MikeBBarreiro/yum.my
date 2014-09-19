@@ -7,7 +7,7 @@
     $scope.user = {};
 
     function success(response){
-      toastr.success('Wonderful');
+      toastr.success('You\'ve succesfully loged-in!');
       $location.path('/');
     }
 

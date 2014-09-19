@@ -11,7 +11,7 @@
       $location.path('/login');
     }
     function failure(response){
-      toastr.error('ERROR, regrestration, please fix, or try again!');
+      toastr.error('ERROR, please fix, or try again!');
       $scope.user = {};
     }
 
